@@ -34,8 +34,9 @@
 
                 sheet.getUnderlyingDataAsync(options).then(function(t){
                     table = t;
-			        var tgt = document.getElementById("dataTarget");
-			    tgt.innerHTML = "<h4>Underlying Data:</h4><p>" + JSON.stringify(table.getData()) + "</p>";
+		    console.log(table);
+		    var tgt = document.getElementById("dataTarget");
+		    tgt.innerHTML = "<h4>Underlying Data:</h4><p>" + JSON.stringify(table.getData()) + "</p>";
                 });
             }
         </script>
